@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>demo</title>
+    <link rel="stylesheet" href="./src/index.css" />
+    <!-- <script type="module" src="/src/my-element.ts"></script> -->
+    <script type="module" src="/src/leave-balance1.ts"></script>
+    <script type="module" src="/src/leave-balance2.ts"></script>
+    <script type="module" src="/src/leave-balance3.ts"></script>
+  </head>
+  <body>
+<my-leave-balance 
+      sick-leaves="10" 
+      casual-leaves="10" 
+      vacation-leaves="110">
+    </my-leave-balance>  </body>
+    <my-dynamic-leave-balance
+      leaves='{"Sick":5,"Casual":3,"Vacation":7,"Paternity":2}'
+    ></my-dynamic-leave-balance>
+    <my-slot-leave-balance>
+      <div class="card">
+        <div class="label">Sick Leaves</div>
+        <div class="value">4</div>
+      </div>
+      <div class="card">
+        <div class="label">Casual Leaves</div>
+        <div class="value">3</div>
+      </div>
+      <div class="card">
+        <div class="label">Vacation</div>
+        <div class="value">6</div>
+      </div>
+      <div class="card">
+        <div class="label">Paternity</div>
+        <div class="value">2</div>
+      </div>
+    </my-slot-leave-balance>
+</html>
